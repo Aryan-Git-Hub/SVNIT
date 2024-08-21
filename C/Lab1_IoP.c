@@ -14,7 +14,10 @@ int main() // --> main() function
 
     // Using scanf() function
     int c, d, sum2;
-    scanf("%d%d", &c, &d);
+    printf("Enter value of c: ");
+    scanf("%d", &c);
+    printf("Enter value of d: ");
+    scanf("%d", &d);
     sum2 = c+d;
     printf("Sum of c and d is: %d\n", sum2);
 
