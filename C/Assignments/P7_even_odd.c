@@ -12,8 +12,6 @@ int main() {
     {
         printf("Odd number");
     }
-    
-    
 
     return 0;
 }
