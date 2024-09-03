@@ -12,9 +12,6 @@ int main() {
     } else {
         printf("C is greater");
     }
-    
-    
-    
 
     return 0;
 }
