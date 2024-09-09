@@ -157,13 +157,31 @@
 
 
 // ***********************************************************************************************************
+// #include<stdio.h>
+
+// int main() {
+//     for (int i=1; i<=10; i++)
+//     {
+//         printf("5 x %d = %d\n", i, 5*i);
+//     }
+    
+//     return 0;
+// }
+
+
+
+// ***********************************************************************************************************
 #include<stdio.h>
 
 int main() {
-    for (int i=1; i<=10; i++)
-    {
-        printf("5 x %d = %d\n", i, 5*i);
-    }
-    
+    // printf("Enter the value of c: ");
+    // char c = getchar(); // ---> similar as scanf() but take only one character
+    // putchar(c);
+
+    char s[20];
+    printf("This is gets(): ");
+    gets(s); // ---> will give warning and it is unsafe to use
+    puts(s);
+
     return 0;
 }
