@@ -171,17 +171,42 @@
 
 
 // ***********************************************************************************************************
+// #include<stdio.h>
+
+// int main() {
+//     // printf("Enter the value of c: ");
+//     // char c = getchar(); // ---> similar as scanf() but take only one character
+//     // putchar(c);
+
+//     char s[20];
+//     printf("This is gets(): ");
+//     gets(s); // ---> will give warning and it is unsafe to use
+//     puts(s);
+
+//     return 0;
+// }
+
+
+
+// ***********************************************************************************************************
 #include<stdio.h>
 
 int main() {
-    // printf("Enter the value of c: ");
-    // char c = getchar(); // ---> similar as scanf() but take only one character
-    // putchar(c);
+    char name[100];
+    printf("Enter you name: ");
+    scanf("%s", name);
+    
+    // To get size or length of a string
+    // printf() ---> it will print value in terminal and return the length or no. of characters.
+    int n = printf("%s\n", name);
 
-    char s[20];
-    printf("This is gets(): ");
-    gets(s); // ---> will give warning and it is unsafe to use
-    puts(s);
+    if (n>15)
+    {
+        printf("Your name exceeds of 15 letters!");
+    } else
+    {
+        printf("Success!");
+    }
 
     return 0;
 }
