@@ -194,6 +194,7 @@
 int main() {
     char name[100];
     printf("Enter you name: ");
+    // scanf() ---> It returns no. of Argument given.
     scanf("%s", name);
     
     // To get size or length of a string
