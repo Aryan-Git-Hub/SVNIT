@@ -2,7 +2,7 @@
 
 int main() {
     int operator, a, b;
-    printf("Enter 1 to add, 2 for subtraction, 3 for multiplication, 4 for devidition: ");
+    printf("Enter 1 to add, 2 for subtraction, 3 for multiplication, 4 for division: ");
     scanf("%d", &operator);
 
     switch (operator)
@@ -29,10 +29,10 @@ int main() {
         break;
 
     case 4:
-        printf("Enter two numbers to devide: ");
+        printf("Enter two numbers to divide: ");
         scanf("%d%d", &a, &b);
         float dev = a/b;
-        printf("Devidition of two numbers a/b: %f", dev);
+        printf("Division of two numbers a/b: %f", dev);
         break;
     
     default:
