@@ -5,7 +5,6 @@ int main() {
     printf("Enter any number: ");
     scanf("%d", &n);
     temp = n;
-    int palindrome = 0;
     
     int sum = 0;
     while (temp>0)

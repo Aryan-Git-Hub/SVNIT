@@ -189,25 +189,53 @@
 
 
 // ***********************************************************************************************************
+// #include<stdio.h>
+
+// int main() {
+//     char name[100];
+//     printf("Enter you name: ");
+//     // scanf() ---> It returns no. of Argument given.
+//     // getchar() ---> It returns Ascii value of given argument.
+//     scanf("%s", name);
+    
+//     // To get size or length of a string
+//     // printf() ---> it will print value in terminal and return the length or no. of characters.
+//     int n = printf("%s\n", name);
+
+//     if (n>15)
+//     {
+//         printf("Your name exceeds of 15 letters!");
+//     } else
+//     {
+//         printf("Success!");
+//     }
+
+//     return 0;
+// }
+
+
+
+// ***********************************************************************************************************
 #include<stdio.h>
 
 int main() {
-    char name[100];
-    printf("Enter you name: ");
-    // scanf() ---> It returns no. of Argument given.
-    // getchar() ---> It returns Ascii value of given argument.
-    scanf("%s", name);
-    
-    // To get size or length of a string
-    // printf() ---> it will print value in terminal and return the length or no. of characters.
-    int n = printf("%s\n", name);
+    int n;
+    printf("Enter any number: ");
+    scanf("%d", &n);
 
-    if (n>15)
+    switch (n)
     {
-        printf("Your name exceeds of 15 letters!");
-    } else
-    {
-        printf("Success!");
+    case 1 ... 9: // ---> This will give range between 1 to 9
+        printf("It is single digit number!");
+        break;
+    
+    case 10 ... 99:
+        printf("It is double digit number!");
+        break;
+
+    case 100 ... 999:
+        printf("It is three digit number!");
+        break;
     }
 
     return 0;
