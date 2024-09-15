@@ -23,8 +23,6 @@ int main() {
     {
         printf("%d ", rev_arr[i]);
     }
-    
-    
 
     return 0;
 }
