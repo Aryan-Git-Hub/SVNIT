@@ -10,22 +10,31 @@ int main() {
     {
         scanf("%d", &arr[i]);
     }
-    
-    int temp;
-    for (int i = 0; i < n-1; i++)
+
+    int smallest;
+    int small_index;
+    int a = 0;
+    for (int i = 0; i < n; i++)
     {
+        smallest = arr[i];
         for (int j = i+1; j < n; j++)
         {
-            if (arr[i]>arr[j])
+            if (arr[j]<smallest)
             {
-                temp = arr[i];
-                arr[i] = arr[j];
-                arr[j] = temp;
+                smallest = arr[j];
+                small_index = j;
+                a = 1;
             }
+        }
+        if (a==1)
+        {
+            arr[small_index] = arr[i];
+            arr[i] = smallest;
+            a = 0;
         }
     }
 
-    printf("Array after Bubble Sort: ");
+    printf("Array after Selection Sort: ");
     for (int i = 0; i < n; i++)
     {
         printf("%d ", arr[i]);
