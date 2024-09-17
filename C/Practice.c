@@ -216,27 +216,57 @@
 
 
 // ***********************************************************************************************************
+// #include<stdio.h>
+
+// int main() {
+//     int n;
+//     printf("Enter any number: ");
+//     scanf("%d", &n);
+
+//     switch (n)
+//     {
+//     case 1 ... 9: // ---> This will give range between 1 to 9
+//         printf("It is single digit number!");
+//         break;
+    
+//     case 10 ... 99:
+//         printf("It is double digit number!");
+//         break;
+
+//     case 100 ... 999:
+//         printf("It is three digit number!");
+//         break;
+//     }
+
+//     return 0;
+// }
+
+
+
+// ***********************************************************************************************************
 #include<stdio.h>
+
+void table(int a){
+    for (int i = 1; i <= 10; i++)
+    {
+        printf("%d\n", i*a);
+    }
+    
+}
 
 int main() {
     int n;
-    printf("Enter any number: ");
+    printf("Enter the value of n: ");
     scanf("%d", &n);
 
-    switch (n)
+    int t;
+    for (int i = 0; i < n; i++)
     {
-    case 1 ... 9: // ---> This will give range between 1 to 9
-        printf("It is single digit number!");
-        break;
-    
-    case 10 ... 99:
-        printf("It is double digit number!");
-        break;
-
-    case 100 ... 999:
-        printf("It is three digit number!");
-        break;
+        printf("Kiski table chahiye: ");
+        scanf("%d", &t);
+        table(t);
     }
+    
 
     return 0;
 }
