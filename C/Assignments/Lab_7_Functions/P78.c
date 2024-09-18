@@ -1,11 +1,8 @@
 #include<stdio.h>
 #include<math.h>
 
-int main() {
-    int n, arm, temp, d;
-    printf("Enter any no. to check whether is it a Armstrong no. or not: ");
-    scanf("%d", &n);
-
+void armstrong(int n) {
+    int arm, temp, d;
     int count = 0;
     temp = n;
     while (n>0)
@@ -29,6 +26,13 @@ int main() {
     {
         printf("%d is not an Armstrong Number", n);
     }
+}
+
+int main() {
+    int a;
+    printf("Enter any no. to check whether is it armstrong or not: ");
+    scanf("%d", &a);
+    armstrong(a);
 
     return 0;
 }
