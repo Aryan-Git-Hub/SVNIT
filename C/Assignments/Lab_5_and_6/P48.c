@@ -5,24 +5,15 @@ int main() {
     printf("Enter any single digit number: ");
     scanf("%d", &n);
 
-    int a;
     for (int i = 1; i <= n; i++)
     {
-        a = 1;
-        for (int j = 1; j <= n; j++)
+        for (int j1 = 1; j1 <= n-i; j1++)
         {
-            if (a==1)
-            {
-                for (int k = 1; k <= n-i; k++)
-                {
-                    printf(" ");
-                }
-                a = 0;
-            }
-            if (j<=i)
-            {
-                printf("%d", j);
-            }
+            printf(" ");
+        }
+        for (int j2 = 1; j2 <= i; j2++)
+        {
+            printf("%d", j2);
         }
         printf("\n");
     }
