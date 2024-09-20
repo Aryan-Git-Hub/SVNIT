@@ -244,28 +244,49 @@
 
 
 // ***********************************************************************************************************
-#include<stdio.h>
+// #include<stdio.h>
 
-void table(int a){
-    for (int i = 1; i <= 10; i++)
-    {
-        printf("%d\n", i*a);
-    }
+// void table(int a){
+//     for (int i = 1; i <= 10; i++)
+//     {
+//         printf("%d\n", i*a);
+//     }
     
-}
+// }
+
+// int main() {
+//     int n;
+//     printf("Enter the value of n: ");
+//     scanf("%d", &n);
+
+//     int t;
+//     for (int i = 0; i < n; i++)
+//     {
+//         printf("Kiski table chahiye: ");
+//         scanf("%d", &t);
+//         table(t);
+//     }
+    
+
+//     return 0;
+// }
+
+
+
+// ***********************************************************************************************************
+#include <stdio.h>
 
 int main() {
-    int n;
-    printf("Enter the value of n: ");
-    scanf("%d", &n);
+    char str[20];
 
-    int t;
-    for (int i = 0; i < n; i++)
-    {
-        printf("Kiski table chahiye: ");
-        scanf("%d", &t);
-        table(t);
-    }
+    // printf("Enter a string: ");
+    // scanf("%s", str);
+    // printf("You entered: %s\n", str);
+
+    // Another method ---> gets()
+    printf("Enter a string using gets(): ");
+    gets(str);
+    printf("You entered using gets(): %s\n", str);
     
 
     return 0;
