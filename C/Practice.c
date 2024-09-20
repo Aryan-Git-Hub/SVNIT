@@ -274,20 +274,23 @@
 
 
 // ***********************************************************************************************************
-#include <stdio.h>
+// #include <stdio.h>
 
-int main() {
-    char str[20];
+// int main() {
+//     char str[20];
 
-    // printf("Enter a string: ");
-    // scanf("%s", str);
-    // printf("You entered: %s\n", str);
+//     // printf("Enter a string: ");
+//     // scanf("%s", str);
+//     // printf("You entered: %s\n", str);
 
-    // Another method ---> gets()
-    printf("Enter a string using gets(): ");
-    gets(str);
-    printf("You entered using gets(): %s\n", str);
-    
+//     // Another method ---> gets()
+//     printf("Enter a string using gets(): ");
+//     gets(str);
+//     printf("You entered using gets(): %s\n", str);
 
-    return 0;
-}
+//     return 0;
+// }
+
+
+
+// ***********************************************************************************************************
