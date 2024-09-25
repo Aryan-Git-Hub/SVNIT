@@ -1,7 +1,0 @@
-{
-    "files.associations": {
-        "stdio.h": "c",
-        "__bit_reference": "c",
-        "bitset": "c"
-    }
-}
