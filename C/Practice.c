@@ -322,3 +322,23 @@
 
 
 // ***********************************************************************************************************
+// #include<stdio.h>
+
+// char ascii_to_char(int n)
+// {
+//     char c = n;
+//     return c;
+// }
+// int main() {
+//     int n;
+//     printf("Enter any ascii value to convert it's corresponding character: ");
+//     scanf("%d", &n);
+//     char chr = ascii_to_char(n);
+//     printf("%c", chr);
+
+//     return 0;
+// }
+
+
+
+// ***********************************************************************************************************
