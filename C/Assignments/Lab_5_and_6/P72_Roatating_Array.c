@@ -31,13 +31,13 @@ int main() {
     for (int i = 0; i < r; i++)
     {
         temp[0] = arr[n-1];
-        for (int i = 0; i < n-1; i++)
+        for (int j = 0; j < n-1; j++)
         {
-            temp[i+1] = arr[i];
+            temp[j+1] = arr[j];
         }
-        for (int i = 0; i < n; i++)
+        for (int k = 0; k < n; k++)
         {
-            arr[i] = temp[i];
+            arr[k] = temp[k];
         }
     }
     
