@@ -268,8 +268,6 @@
 //     return 0;
 // }
 
-
-
 // ***********************************************************************************************************
 // #include <stdio.h>
 // #include <math.h>
@@ -319,8 +317,6 @@
 //     return 0;
 // }
 
-
-
 // ***********************************************************************************************************
 // #include<stdio.h>
 
@@ -339,14 +335,27 @@
 //     return 0;
 // }
 
+// ***********************************************************************************************************
+// #include<stdio.h>
 
+// int main() {
+//     char str[20] = "Aryan Jain";
+//     printf("%11.20s", str);
+
+//     return 0;
+// }
 
 // ***********************************************************************************************************
-#include<stdio.h>
-
-int main() {
-    char str[20] = "Aryan Jain";
-    printf("%11.20s", str);
-
-    return 0;
+#include <stdio.h>
+void main()
+{
+    /*Character array of length 100*/
+    char str[100];
+    printf("Enter a string: ");
+    /* Take a string as input */
+    gets(str);
+    /* Display the string */
+    printf("Entered string is: ");
+    // printf("%s", str);
+    puts(str);
 }
