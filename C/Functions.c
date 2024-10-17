@@ -33,7 +33,7 @@
 // ***********************************************************************************************************
 // #include<stdio.h>
 
-// float f(n)
+// float f(n) // ---> gives error because we not specify the type of 'n' but in previous versions of c compiler consider as int type.
 // {
 //     return (2*n);
 // }
