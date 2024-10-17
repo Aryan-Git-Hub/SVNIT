@@ -13,9 +13,9 @@ int main() {
     }
 
     int rev_arr[n];
-    for (int i = n-1; i >= 0; i--)
+    for (int i = 0; i < n; i++)
     {
-        rev_arr[n-i-1] = arr[i];
+        rev_arr[i] = arr[n-i-1];
     }
     
     printf("Reverse of this Array is: ");

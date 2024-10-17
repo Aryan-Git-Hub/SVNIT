@@ -5,38 +5,23 @@ int main() {
     printf("Enter the value of n: ");
     scanf("%d", &n);
 
-    n = n+1;
-    int a = 1;
-    int b;
-    for (int i = 1; i <= n; i++)
+    for (int i = 0; i < n; i++)
     {
-        b = i;
-        if (i==n)
+        for (int j = 0; j < n-i-1; j++)
         {
-            break;
+            printf(" ");
         }
-        
-        for (int j = 1; j <= n+i-1; j++)
+
+        for (int j = 1; j <= i+1; j++)
         {
-            if (j<n-i+1)
-            {
-                printf(" ");
-            } else
-            {
-                if (j<n)
-                {
-                    printf("%d", a);
-                    a++;
-                } else if (j==i)
-                {
-                    printf("%d", i);
-                } else
-                {
-                    printf("%d", b--);
-                }
-            }
+            printf("%d", j);
         }
-        a = 1;
+
+        for (int j = i; j > 0; j--)
+        {
+            printf("%d", j);
+        }
+
         printf("\n");
     }
     
