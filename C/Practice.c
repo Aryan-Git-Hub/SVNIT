@@ -346,16 +346,34 @@
 // }
 
 // ***********************************************************************************************************
-#include <stdio.h>
-void main()
-{
-    /*Character array of length 100*/
-    char str[100];
-    printf("Enter a string: ");
-    /* Take a string as input */
-    gets(str);
-    /* Display the string */
-    printf("Entered string is: ");
-    // printf("%s", str);
-    puts(str);
-}
+// #include <stdio.h>
+// void main()
+// {
+//     /*Character array of length 100*/
+//     char str[100];
+//     printf("Enter a string: ");
+//     /* Take a string as input */
+//     gets(str);
+//     /* Display the string */
+//     printf("Entered string is: ");
+//     // printf("%s", str);
+//     puts(str);
+// }
+
+
+
+// ***********************************************************************************************************
+// #include<stdio.h>
+
+// int main() {
+//     int i;
+//     while (i=1) // ---> set the value of i to 1 and return true, if we set value of i to 0 then it returns false.
+//     {
+//         printf("%d", i);
+//     }
+//     return 0;
+// }
+
+
+
+// ***********************************************************************************************************
