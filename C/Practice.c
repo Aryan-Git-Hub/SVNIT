@@ -360,8 +360,6 @@
 //     puts(str);
 // }
 
-
-
 // ***********************************************************************************************************
 // #include<stdio.h>
 
@@ -370,6 +368,57 @@
 //     while (i=1) // ---> set the value of i to 1 and return true, if we set value of i to 0 then it returns false.
 //     {
 //         printf("%d", i);
+//     }
+//     return 0;
+// }
+
+// *************************************Concentric Pattern**********************************************************************
+// #include <stdio.h>
+
+// int main()
+// {
+//     int n;
+//     printf("Enter the value of n to get concentric pattern: ");
+//     scanf("%d", &n);
+//     // Complete the code to print the pattern.
+//     int k = n + 1;
+//     for (int i = 0; i < 2 * n - 1; i++)
+//     {
+//         for (int j = 0; j < 2 * n - 1; j++)
+//         {
+//             if (i <= (2 * n - 1) / 2)
+//             {
+//                 if (i + j >= 2 * n - 1)
+//                 {
+//                     printf("%d ", ++k);
+//                 }
+//                 else if (j > i)
+//                 {
+//                     printf("%d ", k);
+//                 }
+//                 else
+//                 {
+//                     printf("%d ", --k);
+//                 }
+//             }
+//             else
+//             {
+//                 if (j > i)
+//                 {
+//                     printf("%d ", ++k);
+//                 }
+//                 else if (i + j >= 2 * n - 1)
+//                 {
+//                     printf("%d ", k);
+//                 }
+//                 else
+//                 {
+//                     printf("%d ", --k);
+//                 }
+//             }
+//         }
+//         k = n + 1;
+//         printf("\n");
 //     }
 //     return 0;
 // }
