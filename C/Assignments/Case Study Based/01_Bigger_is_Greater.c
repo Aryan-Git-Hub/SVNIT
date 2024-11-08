@@ -1,8 +1,6 @@
 #include<stdio.h>
 #include<string.h>
 
-
-
 int main() {
     int N;
     printf("How many words you wanna enter: ");
