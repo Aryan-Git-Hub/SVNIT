@@ -46,7 +46,7 @@ int main() {
         total_digits = 0;
         for (int i = 0; i < count; i++)
         {
-            if (n%(temp%10)==0)
+            if (n%(temp%10)==0 && temp%10!=0)
             {
                 total_digits += 1;
             }
