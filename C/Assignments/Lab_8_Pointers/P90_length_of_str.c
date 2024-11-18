@@ -7,15 +7,15 @@ int main() {
 
     char* ptr = str;
     int len = 0;
-    int i = 1;
-    while (i)
+    int i = 0;
+    while (1)
     {
-        if (*(ptr+i-1)=='\0')
+        if (*(ptr+i)=='\0')
         {
             break;
         }
         
-        if (*(ptr+i-1)!=' ')
+        if (*(ptr+i)!=' ')
         {
             len++;
         }
