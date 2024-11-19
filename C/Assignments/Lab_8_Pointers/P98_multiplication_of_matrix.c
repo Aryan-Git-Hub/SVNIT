@@ -63,6 +63,8 @@ int main() {
         printf("\n");
     }
     
-    
+    free(ptr_m1);
+    free(ptr_m2);
+    free(ptr_m);
     return 0;
 }
