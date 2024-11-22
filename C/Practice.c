@@ -426,16 +426,16 @@
 
 
 // ***********************************************************************************************************
-#include<stdio.h>
-#include<stdlib.h>
+// #include<stdio.h>
+// #include<stdlib.h>
 
-int main() {
-    char* str;
-    str = malloc(50*sizeof(char));
-    scanf("%[^\n]", str);
-    printf("%s\n", str);
+// int main() {
+//     char* str;
+//     str = malloc(50*sizeof(char));
+//     scanf("%[^\n]", str);
+//     printf("%s\n", str);
 
-    printf("length of str is: %d\n", sizeof(str)/sizeof(char)); // ---> Why this always give '8' as a length of string?
+//     printf("length of str is: %d\n", sizeof(str)/sizeof(char)); // ---> Why this always give '8' as a length of string?
 
-    return 0;
-}
+//     return 0;
+// }

@@ -1,0 +1,12 @@
+1) fopen() -> opening a file
+    FILE*fopen(const char*file_name, const*read_mode)
+
+    Type of read modes in c:
+        1. "r+"  -> read and update, does not create file if not exists and return NULL
+        2. "rb"  -> read binary
+        3. "w+"  -> read and write, create new file if not exists
+        4. "wb+" -> read and write binary
+        5. "wb"  -> write binary
+        6. "rb+" -> read and write binary
+        7. "a"   -> append
+        8. "a+"  -> append and update
