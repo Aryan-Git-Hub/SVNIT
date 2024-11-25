@@ -30,5 +30,7 @@ int main() {
         fputs("\n\n", f_ptr);
     }
 
+    fclose(f_ptr);
+
     return 0;
 }
