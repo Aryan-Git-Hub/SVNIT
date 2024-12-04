@@ -23,7 +23,7 @@ int main()
     {
         for (int j = 0; j < n-i-1; j++)
         {
-            if (strlen(ptr_str[j])>strlen(ptr_str[j+1]))
+            if (strcmp(ptr_str[j], ptr_str[j+1])>0)
             {
                 // Swap the strings
                 strcpy(temp, ptr_str[j]);
