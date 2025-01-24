@@ -11,8 +11,8 @@ int main() {
     struct Node* Head;
     Head = NULL;
 
-    struct Node* temp;
-    struct Node* tail;
+    // adding elements to linked list
+    struct Node* temp, *tail;
     for (int i = 0; i < 10; i++)
     {
         if (Head==NULL)
@@ -34,6 +34,7 @@ int main() {
         }
     }
 
+    // deleting linked list
     temp = Head;
     struct Node* temp_next;
     for (int i = 0; i < 10; i++)
