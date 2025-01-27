@@ -52,3 +52,12 @@ a = "Hel"
 # ***Important***
 print(a.zfill(4))
 print(a.zfill(6))
+
+
+# give ASCII value of 'A'
+print(ord('A')) # 65
+print(chr(65)) # A
+
+import string
+print(string.ascii_letters) # a-zA-Z
+print(string.digits) # 0-9
