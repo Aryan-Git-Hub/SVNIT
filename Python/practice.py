@@ -61,3 +61,48 @@ print(chr(65)) # A
 import string
 print(string.ascii_letters) # a-zA-Z
 print(string.digits) # 0-9
+
+
+print("\n\n\n\n")
+import re
+pattern = r"[a-zA-Z]+"
+matches = list(re.finditer(pattern, "LXI 2013, VXI 2015, VDI 20104 Maruti Suzuki Car in India"))
+print("Number of Mathes")
+for match in matches:
+    print(match.group(), match.span())
+
+
+
+print("\n\n")
+l = [1,2,3,4]
+print(l)
+l.remove(2) # takes element as an argument
+# l.remove(435) # it will return an error
+l.pop(1) # takes position index as an argument
+print(l)
+
+
+print("\n\n")
+l = [1,2,3,4]
+# l1 = l # reference copy
+l1 = l.copy() # shallow copy
+l1[1] = 5
+print(l) # [1, 5, 3, 4]
+
+
+students = [("Amit", 80), ("Rahul", 90), ("Ravi", 85)]
+sorted_students = sorted(students, key=lambda x: x[0], reverse=True) # sort by name
+sorted_students = sorted(students, key=lambda x: x[1], reverse=True) # sort by marks
+print(sorted_students)
+
+
+print("\n\n")
+my_list = [1, 3, 2, 4525,63,234,7,976,13,9,345,45, 4, 3, 4, 2,567,25,764,134,6,425,7,76,676, 57,245,123,3446,5568,6,34]
+unique_list = (set(my_list))
+print(unique_list)
+
+
+print("\n\n")
+str = "Hello World"
+print(set(str))
+
