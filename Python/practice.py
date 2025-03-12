@@ -106,3 +106,5 @@ print("\n\n")
 str = "Hello World"
 print(set(str))
 
+sentence = 'Start a sentence and then bring it to an end'
+pattern = re.compile(r'abc')
