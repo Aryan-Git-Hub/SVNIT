@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.border {
+    /* border: 2px solid black; */
+    border: 1px solid rgb(199, 199, 199);
+}
+
+.container {
+    height: 100vh;
+}
+
+.crousel {
+    height: 50%;
+    margin: 10vh 10vh 5vh 10vh;
+    background-image: url('./crousel.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-container {
+    height: 24%;
+    margin: 5vh 10vh 10vh 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.card {
+    width: 20%;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    margin-top: 6%;
+}
+
+.card-content {
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1vh;
+}
+
+.btn {
+    text-decoration: none;
+    color: red;
+    background-color: rgb(253, 255, 255);
+    width: 5vw;
+    margin: 5px;
+    text-align: center;
+    border-radius: 8px;
+    padding-top: 8px;
+}
