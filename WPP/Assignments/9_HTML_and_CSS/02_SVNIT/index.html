@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SVNIT</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="heading">
+          <img src="./logo.png" alt="" />
+          <img src="./namehind.png" alt="" />
+          <img src="./sardar_vallabhbhai_patel.png" alt="" />
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">ADMINISTRATION</a></li>
+            <li><a href="#">ACADEMIC</a></li>
+            <li><a href="#">DEPARTMANTS</a></li>
+            <li><a href="#">STUDENT LIFE</a></li>
+            <li><a href="#">RESEARCH & CUNSULTANCY</a></li>
+            <li><a href="#">CARRER DEVELOPMENT CELL</a></li>
+            <li><a href="#">CENTRAL FACILITY</a></li>
+            <li><a href="#">CONTACT US</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <div class="grid-container">
+          <div class="left-side-bar">
+            <a href="#" class="grid-links">Minutes of Meetings</a>
+            <a href="#" class="grid-links">Memorandum of Understanding</a>
+            <a href="#" class="grid-links">Ek Bharat Shreshtha Bharat</a>
+            <a href="#" class="grid-links">Achievements</a>
+            <a href="#" class="grid-links">Central Library</a>
+            <a href="#" class="grid-links">Alumni</a>
+            <a href="#" class="grid-links">NIRF</a>
+            <a href="#" class="grid-links">Career</a>
+            <a href="#" class="grid-links">Vigilance Section</a>
+            <a href="#" class="grid-links">RTI</a>
+            <a href="#" class="grid-links">Employee Corner</a>
+          </div>
+
+          <div class="carousel">
+              <div style="position: relative;">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./sardar.JPG" alt="Image 1" />
+                  </div>
+                  <div class="carousel-item active">
+                    <img src="./ARTM2151.JPG" alt="Image 2" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./3b.jpg" alt="Image 3" />
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./5.jpg" alt="Image 4" />
+                  </div>
+                </div>
+
+                <!-- Navigation Arrows -->
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+
+          </div>
+
+          <div class="right-side-bar">
+            <a href="#" class="grid-links">Samarth-eGov</a>
+            <a href="#" class="grid-links">Chapters | Clubs | Society</a>
+            <a href="#" class="grid-links">Magazine | Newsletter</a>
+            <a href="#" class="grid-links">Achievements</a>
+            <a href="#" class="grid-links">Admission</a>
+            <a href="#" class="grid-links">Scholarship</a>
+            <a href="#" class="grid-links">Fee Structure</a>
+            <a href="#" class="grid-links">Academic Calender</a>
+            <a href="#" class="grid-links">JoSAA | CCMT</a>
+            <a href="#" class="grid-links">Hostel</a>
+            <a href="#" class="grid-links">Fees Payment</a>
+            <a href="#" class="grid-links">NCC | NSS | Yoga</a>
+            <a href="#" class="grid-links">Cells</a>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+  <script>
+    let index = 0;
+
+    function moveSlide(step) {
+      const items = document.querySelectorAll(".carousel-item");
+      const total = items.length;
+
+      items[index].classList.remove("active");
+      index = (index + step + total) % total;
+      items[index].classList.add("active");
+
+      document.querySelector(
+        ".carousel-inner"
+      ).style.transform = `translateX(-${index * 100}%)`;
+    }
+
+    // Auto-slide every 5 seconds
+    setInterval(() => moveSlide(1), 5000);
+  </script>
+</html>
